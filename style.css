@@ -1,0 +1,131 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.completed-tasks {
+    margin-top: 2rem;
+    width: 60vw;
+}
+
+.header {
+    background: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Orange-Pattern-Simple-Background-Image.jpg);
+    border-radius: 0 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 20vh;
+    width: 60vw;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 75%;
+}
+
+.todo-add {
+    position: relative;
+    margin: 1rem 3rem 3rem 0;
+}
+
+#item-add {
+    border-radius: 10px 0 0 10px;
+    border: 1px solid rgb(231, 137, 82);
+    border-right: 0;
+    font-size: 1.2rem;
+    padding: 4px 3px;
+    width: 50vw;
+}
+
+#item-add:focus {
+    outline: none;
+}
+
+.btn {
+    position: absolute;
+    font-size: 1.2rem;
+    padding: 4px 10px 6px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(231, 137, 82);
+}
+
+.todo-items {
+    font-size: large;
+    width: 60vw;
+    text-align: left;
+}
+
+.list-of-items {
+    list-style-type: none;
+}
+
+.list-item {
+    padding: 7px;
+    position: relative;
+}
+
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transform: translateX(-50%);
+    outline: none;
+}
+
+.completed .list-item {
+    text-decoration: line-through;
+}
+
+.close-btn:after {
+    display: inline-block;
+    content: "\00d7";
+    font-size: 20px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}

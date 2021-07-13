@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo Application</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 id="main-heading">ToDo App</h1>
+        </div>
+    </header>
+    <main id="main">
+        <span id="alert"></span>
+        <div class="todo-add">
+            <input type="text" id="item-add" placeholder="Enter what would you want to do" onkeydown="if (event.keyCode == 13)
+                        document.getElementById('btn-add').click()">
+            <button class="btn" id="btn-add">Add</button>
+        </div>
+        <div class="todo-items">
+            <ul class="list-of-items">
+
+            </ul>
+        </div>
+        <div class="completed-tasks">
+            <h2>Completed Tasks</h2>
+            <ul class="list-of-items completed">
+
+            </ul>
+        </div>
+        <footer id="footer">
+            <div class="footer-social-profiles">
+                <a href="https://github.com/melihthedev" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github profile"></a>
+                <a href="https://www.linkedin.com/in/melih-%C3%A7etin-654105201/" target="_blank"><img src="https://drlm.org/wp-content/uploads/2016/01/LOGO-LINKEDIN.png" alt="linked-in profile" id="linkedin"></a>
+            </div>
+            <div class="footer-name">
+                <p class="title">Made by Melih with ❤️</p>
+            </div>
+        </footer>
+    </main>
+    <script defer src="app.js"></script>
+</body>
+
+</html>
